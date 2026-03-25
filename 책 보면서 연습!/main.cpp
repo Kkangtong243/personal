@@ -5,7 +5,8 @@ using namespace std;
 
 void main()
 {
-	cout << "My Calculators" << endl;
+	Calculator calculator; //calculator °´Ã¼ Á¤ÀÇ
+	cout << "My Calculators" << calculator.GetName() << endl;
 
 	float input1, input2;
 	while (true)
@@ -26,19 +27,18 @@ void main()
 
 		int a = input1;
 		int b = input2;
-		
+
 		if (a == input1 && b == input2)
 		{
-			int result = Add(a, b);
+			int result = calculator.Add(a, b);
 			cout << "Integer addition: " << a << " + " << b << " = "
 				<< result
 				<< std::endl;
 		}
 		else
 		{
-			float result = Add(input1, input2);
-			cout << "float addition: "
-				<< input1 << " + " << input2 << " = "
+			float result = calculator.Add(input1, input2);
+			cout << "float addition: " << input1 << " + " << input2 << " = "
 				<< result
 				<< std::endl;
 		}

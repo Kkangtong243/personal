@@ -1,14 +1,19 @@
 #pragma once
-/*
-	Add : 2개의 정수를 합산, 그 결과값 반환
-	매개변수 a, b : 2개의 정수 입력값
-*/
+#include <iostream>
+using namespace std;
 
-int Add(int a, int b);
+class Calculator
+{
+protected:
 
-/*
-	2개의 float을 합산, 그 결과값 반환
-*/
+	string _name;
 
-float Add(float a, float b);
+public:
+	Calculator(); //생성자(컨스트럭터)
 
+	string GetName();
+
+	int Add(int a, int b);
+
+	float Add(float a, float b);
+};
